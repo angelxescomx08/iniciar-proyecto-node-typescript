@@ -44,3 +44,20 @@ La configuración es a tu criterio, sin embargo una configuración recomendada e
   "outDir": "./build"
 }
 ```
+
+## 5. Scripts para desarrollo local y producción
+
+Una cosa útil es tener scripts para el desarrollo y producción. Para desarrollo deberíamos tener algo que actualice typescript con los últimos cambios se puede usar nodemon o la siguiente dependencia:
+
+```
+npm i ts-node-dev -D
+```
+
+Los scripts para desarrollo y producción son los siguientes:
+
+```json
+{
+  "dev": "ts-node-dev src/index.ts",
+  "start": "node build/index.ts"
+}
+```
